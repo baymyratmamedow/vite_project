@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  h1 {
+      @apply text-4xl font-serif my-2
+  }
+  p {
+  }
+  button {
+    @apply bg-white text-blue-400 border border-blue-500 rounded-md px-3 py-2 m-1
+  }
+  button:hover {
+      @apply text-white bg-blue-600
+  }
+  button:active {
+  }
+}
+@layer components{
+    .comp{
+        @apply text-3xl text-yellow-500
+    }
+    .danger{
+        @apply border-red-600 text-red-700 
+    }
+    .danger:hover{
+        @apply bg-red-600 text-white
+    }
+    .danger:active{
+        @apply bg-red-600 text-white
+    }
+}
